@@ -19,7 +19,7 @@ public class UserService {
         if (verifyUserExists(usersDTO.getEmail())) {
             throw new ExistingUserException("User exists");
         }
-        User user = usersConverter.fromUsersDtoToUsers(usersDTO);
+        User user = usersConverter.convertToEntity(usersDTO);
         return userRepository.save(user);
     }
 

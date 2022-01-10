@@ -12,7 +12,7 @@ public class UsersConverter {
 
     private final PasswordEncoder passwordEncoder;
 
-    public User fromUsersDtoToUsers(UsersDTO usersDto) {
+    public User convertToEntity(UsersDTO usersDto) {
         User user = new User();
         user.setEmail(usersDto.getEmail());
         user.setPassword(passwordEncoder.encode(usersDto.getPassword()));
@@ -20,7 +20,7 @@ public class UsersConverter {
         return user;
     }
 
-    public UsersDTO fromUsersToUsersDto(User user) {
+    public UsersDTO convertToDto(User user) {
         return UsersDTO.builder()
                 .email(user.getEmail())
                 .password(user.getPassword())
