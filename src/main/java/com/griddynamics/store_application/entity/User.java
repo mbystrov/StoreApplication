@@ -1,4 +1,4 @@
-package com.griddynamics.entity;
+package com.griddynamics.store_application.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

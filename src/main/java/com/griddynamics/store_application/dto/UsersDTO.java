@@ -1,4 +1,4 @@
-package com.griddynamics.dto;
+package com.griddynamics.store_application.dto;
 
 import lombok.Builder;
 import lombok.Data;

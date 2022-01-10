@@ -1,8 +1,8 @@
-package com.griddynamics.controller;
+package com.griddynamics.store_application.controller;
 
-import com.griddynamics.dto.UsersDTO;
-import com.griddynamics.entity.User;
-import com.griddynamics.service.UserService;
+import com.griddynamics.store_application.dto.UsersDTO;
+import com.griddynamics.store_application.entity.User;
+import com.griddynamics.store_application.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

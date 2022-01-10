@@ -1,6 +1,6 @@
-package com.griddynamics.repository;
+package com.griddynamics.store_application.repository;
 
-import com.griddynamics.entity.User;
+import com.griddynamics.store_application.entity.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

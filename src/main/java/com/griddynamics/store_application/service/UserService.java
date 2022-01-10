@@ -1,10 +1,10 @@
-package com.griddynamics.service;
+package com.griddynamics.store_application.service;
 
-import com.griddynamics.dto.UsersDTO;
-import com.griddynamics.entity.User;
-import com.griddynamics.exception.ExistingUserException;
-import com.griddynamics.repository.UserRepository;
-import com.griddynamics.util.UsersConverter;
+import com.griddynamics.store_application.dto.UsersDTO;
+import com.griddynamics.store_application.entity.User;
+import com.griddynamics.store_application.exception.ExistingUserException;
+import com.griddynamics.store_application.repository.UserRepository;
+import com.griddynamics.store_application.util.UsersConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ public class UserService {
 
     public User save(UsersDTO usersDTO) {
         if (verifyUserExists(usersDTO.getEmail())) {
-            throw new ExistingUserException();
+            throw new ExistingUserException("User exists");
         }
         User user = usersConverter.fromUsersDtoToUsers(usersDTO);
         return userRepository.save(user);

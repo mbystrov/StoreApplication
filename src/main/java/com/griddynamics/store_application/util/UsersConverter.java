@@ -1,7 +1,7 @@
-package com.griddynamics.util;
+package com.griddynamics.store_application.util;
 
-import com.griddynamics.dto.UsersDTO;
-import com.griddynamics.entity.User;
+import com.griddynamics.store_application.dto.UsersDTO;
+import com.griddynamics.store_application.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;

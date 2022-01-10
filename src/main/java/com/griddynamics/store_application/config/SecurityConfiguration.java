@@ -1,4 +1,4 @@
-package com.griddynamics.config;
+package com.griddynamics.store_application.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
